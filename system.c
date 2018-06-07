@@ -107,15 +107,14 @@ void printTime() {
   lcd.print(TimeFormat(temp4));
 }
 void clearPrintValue() {
-
   lcd.setCursor(4, 0);
-  lcd.print("   ");
+  lcd.print("        ");
   lcd.setCursor(4, 1);
-  lcd.print("   ");
+  lcd.print("        ");
   lcd.setCursor(4, 2);
-  lcd.print("   ");
+  lcd.print("        ");
   lcd.setCursor(4, 3);
-  lcd.print("   ");
+  lcd.print("        ");
 }
 void btnCheck() {
   // check if the pushbutton is pressed. If it is, the buttonState is HIGH:
@@ -143,7 +142,7 @@ void CheckTimmer() {
     chStage1 = false;
     ch1 = 0;
     lcd.setCursor(4, 0);
-    lcd.print("*  ");
+    lcd.print("*       ");
     digitalWrite(relay1, HIGH);
     delay(2000);
     digitalWrite(relay1, LOW);
@@ -152,7 +151,7 @@ void CheckTimmer() {
     chStage2 = false;
     ch2 = 0;
     lcd.setCursor(4, 1);
-    lcd.print("*  ");
+    lcd.print("*       ");
     digitalWrite(relay2, HIGH);
     delay(1000);
     digitalWrite(relay2, LOW);
@@ -161,7 +160,7 @@ void CheckTimmer() {
     chStage3 = false;
     ch3 = 0;
     lcd.setCursor(4, 2);
-    lcd.print("*  ");
+    lcd.print("*       ");
     digitalWrite(red, HIGH);
     delay(1000);
     digitalWrite(red, LOW);
@@ -170,7 +169,7 @@ void CheckTimmer() {
     chStage4 = false;
     ch4 = 0;
     lcd.setCursor(4, 3);
-    lcd.print("*  ");
+    lcd.print("*       ");
     digitalWrite(blue, HIGH);
     delay(1000);
     digitalWrite(blue, LOW);
